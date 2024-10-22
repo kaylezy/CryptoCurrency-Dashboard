@@ -122,14 +122,14 @@ export default function Home() {
     // Auto-refresh data every 1 minute
     const interval = setInterval(fetchCryptoData, 60000);
     return () => clearInterval(interval);
-  }, [selectedCurrency]);
+  }, );
 
   // Fetch chart data when selected cryptocurrency changes
   useEffect(() => {
     if (selectedCrypto) {
       fetchChartData();
     }
-  }, [selectedCrypto]);
+  }, );
 
   // Filter cryptocurrencies based on the search query
   useEffect(() => {
