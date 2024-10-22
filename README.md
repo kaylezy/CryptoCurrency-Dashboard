@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cryptocurrency Tracker App
 
-## Getting Started
+A responsive and feature-rich cryptocurrency tracking application built with Next.js, TypeScript, and Tailwind CSS. Track real-time cryptocurrency prices, view historical data, and manage your favorite digital assets with ease.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Core Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Real-time Cryptocurrency Search**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+  - Search cryptocurrencies by name or symbol
+  - Instant filtering of results
+  - Support for 100+ top cryptocurrencies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Comprehensive Price Display**
 
-## Learn More
+  - Current price with live updates
+  - 24-hour price change percentage
+  - Market capitalization
+  - Trading volume
+  - Visual indicators for price movements
 
-To learn more about Next.js, take a look at the following resources:
+- **Interactive Price Charts**
+  - 7-day historical price data
+  - Interactive line charts using Chart.js
+  - Hover tooltips for detailed information
+  - Responsive design for all screen sizes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Additional Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Multi-Currency Support**
 
-## Deploy on Vercel
+  - Convert prices to different fiat currencies
+  - Supported currencies: USD, EUR, GBP, JPY
+  - Real-time conversion rates
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Dark/Light Mode**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  - Toggle between dark and light themes
+  - Automatic system preference detection
+  - Persistent theme selection
+
+- **Responsive Design**
+  - Mobile-first approach
+  - Optimized for tablets and desktop
+  - Fluid layouts and adaptive components
+
+## Technology Stack
+
+- **Frontend Framework**: Next.js 14+
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Charts**: Chart.js with react-chartjs-2
+- **API**: CoinGecko API
+- **State Management**: React Hooks
+- **HTTP Client**: Axios
