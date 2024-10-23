@@ -27,6 +27,7 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+import Image from "next/image";
 
 // Types for cryptocurrency data
 interface Cryptocurrency {
@@ -216,7 +217,17 @@ export default function Home() {
       {/* Header Section */}
       <header className="p-4 border-b border-gray-200 dark:border-gray-700">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">Kngkay CryptoCurrency Tracker Dashboard</h1>
+            <Image
+              src="/crypto1.png"
+              alt="CryptoPulse"
+              width="50"
+              height="50"
+              className="w-24"
+            />
+          <div className="text-center">
+            <h1 className="text-2xl font-bold">CryptoPulse </h1>
+            <p className="">CryptoCurrency Tracker Dashboard</p>
+          </div>
           <div className="flex items-center gap-4">
             <label htmlFor="currency-select" className="sr-only">
               Select Currency
